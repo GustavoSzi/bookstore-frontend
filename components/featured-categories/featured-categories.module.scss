@@ -1,0 +1,48 @@
+.embla {
+    padding: 0 72px;
+    overflow: hidden;
+    position: relative;
+    
+    button {
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: 35%;
+
+        &.embla__prev {
+            left: 0px;
+        }
+        &.embla__next {
+            right: 0px;
+        }
+    }
+}
+
+.embla__container {
+    display: flex;
+    height: 280px;
+
+}
+
+.embla__slide {
+    flex: 0 0 25%;
+    
+    div {
+        height: 100%;
+        width: 208px;
+
+        &.cover-1 {
+            background: url('/assets/img/book-1.jpg') no-repeat center/100%;
+        }
+        &.cover-2 {
+            background: url('/assets/img/book-2.jpg') no-repeat center/100%;
+        }
+        &.cover-3 {
+            background: url('/assets/img/book-3.jpg') no-repeat center/100%;
+        }
+    }
+
+    
+}

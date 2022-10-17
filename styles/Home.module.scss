@@ -1,0 +1,84 @@
+@use "./variables.scss" as *;
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.mainContainer {
+  padding: 0 2rem;
+}
+
+#coverContainer {
+  width: 100%;
+  height: 640px;
+  position: relative;
+
+  animation: appear .6s forwards;
+
+  .textContainer {
+    position: absolute;
+    padding: 16px 24px;
+    width: 280px;
+    height: 280px;
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 4px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    &.cover-1, &.cover-2 {
+      left: 8rem;
+      top: 8rem;
+    }
+
+    &.cover-3 {
+      right: 5rem;
+      top: 8rem;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}
+
+#features {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  
+  div {
+    width: 45%;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+}
+
+#categories_container {
+  max-width: 100%;
+  margin-top: 32px;
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+}
