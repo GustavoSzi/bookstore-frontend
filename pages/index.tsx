@@ -20,8 +20,6 @@ const Home = ({ categories }: HomeTypes) => {
     setBannerImage(img);
   }, [])
 
-  console.log(categories)
-
   return (
     <>
       <Head>
